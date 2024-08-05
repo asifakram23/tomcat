@@ -1,0 +1,14 @@
+1.	Tomcat requires java 
+1.	sudo yum install java-17-amazon-corretto-devel
+2.	Download and install tomcat
+1.	cd /opt
+2.	Download tomcat tar file
+3.	sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.71/bin/apache-tomcat-9.0.71.tar.gz
+4.	Extract tar file
+1.	sudo tar xf apache-tomcat-9.0.71.tar.gz
+5.	Remove tar file
+1.	sudo rm apache-tomcat-9.0.71.tar.gz
+6.	Rename tomcat file to tomcat9 permissions on tomcat
+1.	sudo mv apache-tomcat-9.0.71/ tomcat9
+7.	Change permission on tomcat
+1.	sudo chown -R ec2-user:ec2-user tomcat9/
